@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.2" errors="0" skipped="0" tests="2" name="com.guess.twer.guessTwer.controllers.PersonControllerTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0\jre\bin"/>
+    <property name="java.vm.version" value="1.6.0-b105"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\GitRepository\GuessTwerService"/>
+    <property name="java.runtime.version" value="1.6.0-b105"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\GitRepository\GuessTwerService"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="surefire.real.class.path" value="C:\GitRepository\GuessTwerService\target\surefire\surefirebooter10142.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\MEGHAA~1.COR\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows Vista"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0\jre\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\mongodb-win32-i386-2.0.2\bin;C:\Program Files\RSA SecurID Token Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files\Intel\DMIX;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;c:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\NTRU Cryptosystems\NTRU TCG Software Stack\bin\;C:\Program Files\Wave Systems Corp\Gemalto\Access Client\v5\;C:\Program Files\Common Files\Roxio Shared\10.0\DLLShared\;C:\Program Files\Windows Live\Shared;C:\apache-ant-1.8.2-bin\apache-ant-1.8.2\bin;C:\apache-maven-3.0.3\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.6.0\bin;C:\Program Files\SVN\bin;C:\Program Files\Subversion\bin;C:\Program Files\SlikSvn\bin"/>
+    <property name="surefire.test.class.path" value="C:\GitRepository\GuessTwerService\target\test-classes;C:\GitRepository\GuessTwerService\target\classes;C:\Users\meghaagr.CORPORATE\.m2\repository\junit\junit\4.8.2\junit-4.8.2.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\projectlombok\lombok\0.10.6\lombok-0.10.6.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\com\google\code\morphia\morphia\0.99.1-SNAPSHOT\morphia-0.99.1-SNAPSHOT.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\mongodb\mongo-java-driver\2.7.3\mongo-java-driver-2.7.3.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\mockito\mockito-all\1.9.0-rc1\mockito-all-1.9.0-rc1.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\powermock\powermock-api-mockito\1.4.8\powermock-api-mockito-1.4.8.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\powermock\powermock-api-support\1.4.8\powermock-api-support-1.4.8.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\powermock\powermock-core\1.4.8\powermock-core-1.4.8.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\javassist\javassist\3.14.0-GA\javassist-3.14.0-GA.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\powermock\powermock-reflect\1.4.8\powermock-reflect-1.4.8.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\objenesis\objenesis\1.2\objenesis-1.2.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-webmvc\3.1.0.RELEASE\spring-webmvc-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-asm\3.1.0.RELEASE\spring-asm-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-beans\3.1.0.RELEASE\spring-beans-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-context-support\3.1.0.RELEASE\spring-context-support-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-core\3.1.0.RELEASE\spring-core-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-expression\3.1.0.RELEASE\spring-expression-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-web\3.1.0.RELEASE\spring-web-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-test\3.1.0.RELEASE\spring-test-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-aspects\3.0.2.RELEASE\spring-aspects-3.0.2.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\aspectj\aspectjrt\1.2\aspectjrt-1.2.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-context\3.1.0.RELEASE\spring-context-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-aop\3.1.0.RELEASE\spring-aop-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-tx\3.0.5.RELEASE\spring-tx-3.0.5.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\meghaagr.CORPORATE"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="meghaagr"/>
+    <property name="java.class.path" value="C:\GitRepository\GuessTwerService\target\test-classes;C:\GitRepository\GuessTwerService\target\classes;C:\Users\meghaagr.CORPORATE\.m2\repository\junit\junit\4.8.2\junit-4.8.2.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\projectlombok\lombok\0.10.6\lombok-0.10.6.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\com\google\code\morphia\morphia\0.99.1-SNAPSHOT\morphia-0.99.1-SNAPSHOT.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\mongodb\mongo-java-driver\2.7.3\mongo-java-driver-2.7.3.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\mockito\mockito-all\1.9.0-rc1\mockito-all-1.9.0-rc1.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\powermock\powermock-api-mockito\1.4.8\powermock-api-mockito-1.4.8.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\powermock\powermock-api-support\1.4.8\powermock-api-support-1.4.8.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\powermock\powermock-core\1.4.8\powermock-core-1.4.8.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\javassist\javassist\3.14.0-GA\javassist-3.14.0-GA.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\powermock\powermock-reflect\1.4.8\powermock-reflect-1.4.8.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\objenesis\objenesis\1.2\objenesis-1.2.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-webmvc\3.1.0.RELEASE\spring-webmvc-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-asm\3.1.0.RELEASE\spring-asm-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-beans\3.1.0.RELEASE\spring-beans-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-context-support\3.1.0.RELEASE\spring-context-support-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-core\3.1.0.RELEASE\spring-core-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-expression\3.1.0.RELEASE\spring-expression-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-web\3.1.0.RELEASE\spring-web-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-test\3.1.0.RELEASE\spring-test-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-aspects\3.0.2.RELEASE\spring-aspects-3.0.2.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\aspectj\aspectjrt\1.2\aspectjrt-1.2.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-context\3.1.0.RELEASE\spring-context-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-aop\3.1.0.RELEASE\spring-aop-3.1.0.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\org\springframework\spring-tx\3.0.5.RELEASE\spring-tx-3.0.5.RELEASE.jar;C:\Users\meghaagr.CORPORATE\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0\jre"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.6.0"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="C:\Users\meghaagr.CORPORATE\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.132" classname="com.guess.twer.guessTwer.controllers.PersonControllerTest" name="shouldReturnQuestionBasedOnQuestionNo"/>
+  <testcase time="0.006" classname="com.guess.twer.guessTwer.controllers.PersonControllerTest" name="shouldReturnBadRequestOnException"/>
+</testsuite>
