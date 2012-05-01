@@ -1,8 +1,8 @@
 <?xml version="1.0"  encoding="ISO-8859-1"?>
 <!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
 <Configure class="org.mortbay.jetty.webapp.WebAppContext">
-    <Set name="contextPath">/BookmarkService</Set>
+    <Set name="contextPath">/GuessTwerService</Set>
     <Set name="war">
-        <SystemProperty name="app.webapps.path"/>/BookmarkService.war
+        <SystemProperty name="app.webapps.path"/>/GuessTwerService.war
     </Set>
 </Configure>

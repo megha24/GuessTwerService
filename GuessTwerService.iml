@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -12,7 +24,38 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:maven-jetty-plugin:6.1.22" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty:6.1.22" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-util:6.1.22" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:servlet-api:2.5-20081211" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-project:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-model:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-9" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.8.2" level="project" />
+    <orderEntry type="library" name="Maven: classworlds:classworlds:1.1-alpha-2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-profile:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-artifact-manager:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-repository-metadata:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-artifact:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.wagon:wagon-provider-api:1.0-alpha-6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-tools-api:2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-descriptor:2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-plus:6.1.22" level="project" />
+    <orderEntry type="library" name="Maven: geronimo-spec:geronimo-spec-jta:1.0.1B-rc4" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-naming:6.1.22" level="project" />
+    <orderEntry type="library" name="Maven: javax.mail:mail:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-management:6.1.22" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jsp-2.1-jetty:6.1.22" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jdt:core:3.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jsp-api-2.1-glassfish:9.1.1.B60.25.p2" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jsp-2.1-glassfish:9.1.1.B60.25.p2" level="project" />
+    <orderEntry type="library" name="Maven: ant:ant:1.6.5" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-annotations:6.1.22" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-annotation_1.0_spec:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:start:6.1.22" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:0.10.6" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.morphia:morphia:0.99.1-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:2.7.3" level="project" />

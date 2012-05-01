@@ -6,11 +6,12 @@
     <groupId>GuessTwerService</groupId>
     <artifactId>GuessTwerService</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
-        <websitescrapbook.port>80</websitescrapbook.port>
+        <guessTwerService.port>1000</guessTwerService.port>
         <org.springframework-version>3.1.0.RELEASE</org.springframework-version>
-        <embeddedJetty.port>${websitescrapbook.port}</embeddedJetty.port>
+        <embeddedJetty.port>${guessTwerService.port}</embeddedJetty.port>
         <mongodb.hostname>localhost</mongodb.hostname>
         <mongodb.port>27017</mongodb.port>
     </properties>
@@ -25,13 +26,31 @@
                 </property>
             </activation>
             <build>
+
+
                 <plugins>
+
+
                     <plugin>
+                        <!-- Configuration for this is inherited from the parent pom -->
+                        <groupId>org.mortbay.jetty</groupId>
+                        <artifactId>maven-jetty-plugin</artifactId>
+                        <version>6.1.22</version>
+                        <!--<configuration>-->
+                            <!--<contextPath>/GuessTwerService</contextPath>-->
+                            <!--<stopPort>9991</stopPort>-->
+                        <!--</configuration>-->
+                    </plugin>
+
+
+                    <!--<plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>cobertura-maven-plugin</artifactId>
                         <version>2.5.1</version>
                         <configuration>
                             <formats>
+
+
                                 <format>html</format>
                             </formats>
                             <instrumentation>
@@ -79,10 +98,47 @@
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>
+                    </plugin>-->
+                <!--</plugins>-->
+                <!--<plugins>-->
+                <!--<plugin>
+                    <groupId>org.mortbay.jetty</groupId>
+                    <artifactId>maven-jetty-plugin</artifactId>
+                    <version>6.1.10</version>
+                    <configuration>
+                        <scanIntervalSeconds>10</scanIntervalSeconds>
+                        <stopKey>foo</stopKey>
+                        <stopPort>9999</stopPort>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>start-jetty</id>
+                            <phase>pre-integration-test</phase>
+                            <goals>
+                                <goal>run</goal>
+                            </goals>
+                            <configuration>
+                                <scanIntervalSeconds>0</scanIntervalSeconds>
+                                <daemon>true</daemon>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>stop-jetty</id>
+                            <phase>post-integration-test</phase>
+                            <goals>
+                                <goal>stop</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>-->
+                    <!--<plugin>-->
+                        <!--<groupId>org.codehaus.mojo</groupId>-->
+                        <!--<artifactId>jetty-maven-plugin</artifactId>-->
+                    <!--</plugin>-->
                 </plugins>
             </build>
         </profile>
+
 
     </profiles>
 
@@ -92,6 +148,30 @@
             <name>Morphia Repo at Google Code</name>
             <url>http://morphia.googlecode.com/svn/mavenrepo</url>
         </repository>
+        <repository>
+            <id>maven-mongodb-plugin-repo</id>
+            <name>maven mongodb plugin repository</name>
+            <url>http://maven-mongodb-plugin.googlecode.com/svn/maven/repo</url>
+        </repository>
+        <repository>
+            <id>HtmlUnitSnapshots</id>
+            <name>HtmlUnit Snapshots</name>
+            <url>http://htmlunit.sourceforge.net/m2-repo-snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>junit-plus.googlecode.releases</id>
+            <name>junit-plus.googlecode.releases</name>
+            <url>dav:https://junit-plus.googlecode.com/svn/maven2/</url>
+        </repository>
+
+
     </repositories>
 
     <pluginRepositories>
@@ -108,6 +188,13 @@
     </pluginRepositories>
 
     <dependencies>
+        <dependency>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>maven-jetty-plugin</artifactId>
+            <version>6.1.22</version>
+        </dependency>
+
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -182,6 +269,11 @@
             <artifactId>spring-tx</artifactId>
             <version>3.0.5.RELEASE</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>javax.servlet</groupId>-->
+            <!--<artifactId>servlet-api</artifactId>-->
+            <!--<version>2.5</version>-->
+        <!--</dependency>-->
     </dependencies>
     <build>
         <plugins>
