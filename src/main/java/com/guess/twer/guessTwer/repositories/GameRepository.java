@@ -6,10 +6,11 @@ import com.google.code.morphia.query.UpdateOperations;
 import com.guess.twer.guessTwer.models.Person;
 import com.guess.twer.guessTwer.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-
+@Repository
 public class GameRepository {
     private Datastore datastore;
 
@@ -31,6 +32,10 @@ public class GameRepository {
     }
 
     public void setOrUpdateScore(String username, int score) {
+        User user = datastore.find(User.class).get();
+        if((user != null) && user.getHighestScore()>score){
+            score=user.getHighestScore();
+        }
         Query userQuery= datastore.find(User.class).filter("userName",username);
         UpdateOperations<User> updateUserScoreOperation = datastore.createUpdateOperations(User.class).set("highestScore", score);
         datastore.update(userQuery, updateUserScoreOperation, true);
@@ -38,6 +43,10 @@ public class GameRepository {
 
     public int getUserCount() {
         return (int) datastore.find(User.class).countAll();
+    }
+
+    public List<User> getHighestScore(String username) {
+        return datastore.find(User.class).filter("userName", username).asList();
     }
 }
 

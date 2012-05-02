@@ -86,5 +86,11 @@ public class GameServiceTest {
         verify(gameRepository).setOrUpdateScore(username,score);
 
     }
+
+    @Test
+    public void shouldGetHighestScore(){
+        String username= "someUser";
+
+    }
 }
     

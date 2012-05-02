@@ -4,7 +4,9 @@ import com.google.code.morphia.Datastore;
 import com.guess.twer.guessTwer.helpers.DatabaseHelper;
 import com.guess.twer.guessTwer.models.Person;
 import com.guess.twer.guessTwer.models.User;
+import org.junit.After;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,12 +33,14 @@ public class GameRepositoryTest {
     @Before
     public void setUp() {
         databaseHelper = new DatabaseHelper(datastore);
-        databaseHelper.remove(Person.class);
+        databaseHelper.removePerson(Person.class);
+        databaseHelper.removeUser(User.class);
         gameRepository = new GameRepository(datastore);
         databaseHelper.addPerson(new Person("megha", null, null, null, null));
         databaseHelper.addPerson(new Person("mansi", null, null, null, null));
         databaseHelper.addPerson(new Person("inderpal", null, null, null, null));
         databaseHelper.addPerson(new Person("hephzibah", null, null, null, null));
+
     }
 
     @Test
@@ -69,5 +73,29 @@ public class GameRepositoryTest {
         String username = "some Username";
         gameRepository.setOrUpdateScore(username,score);
         assertThat(gameRepository.getUserCount(), is(not(0)));
+    }
+
+    @Test
+    public void shouldNotUpdateScoreIfExistingScoreOfUserIsHighest(){
+        int score = 60;
+        databaseHelper.addUser(new User("user Name",80));
+        String username = "user Name";
+        gameRepository.setOrUpdateScore(username,score);
+        assertThat(gameRepository.getUserCount(), is(not(0)));
+    }
+
+    @Test
+    public void shouldUpdateScoreIfExistingScoreOfUserIsNotHighest(){
+        int score = 100;
+        databaseHelper.addUser(new User("some User",80));
+        String username = "some User";
+        gameRepository.setOrUpdateScore(username,score);
+        assertThat(gameRepository.getUserCount(), is(not(0)));
+    }
+
+    @After
+    public void tearDown(){
+        databaseHelper.removePerson(Person.class);
+        databaseHelper.removeUser(User.class);
     }
 }

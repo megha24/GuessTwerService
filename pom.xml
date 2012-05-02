@@ -225,6 +225,19 @@
             <version>1.4.8</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.7.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-jaxrs</artifactId>
+            <version>1.5.4</version>
+        </dependency>
+
+
         <!--//spring framework dependencies-->
 
         <dependency>

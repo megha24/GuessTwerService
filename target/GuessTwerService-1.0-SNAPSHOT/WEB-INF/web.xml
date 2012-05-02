@@ -5,6 +5,13 @@
 <web-app>
 
     <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/servlet-context.xml
+            classpath:app-context.xml
+        </param-value>
+    </context-param>
+
+    <context-param>
         <param-name>webAppRootKey</param-name>
         <param-value>GuessTwerService</param-value>
     </context-param>

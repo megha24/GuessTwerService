@@ -2,14 +2,14 @@ package com.guess.twer.guessTwer.services;
 
 import com.guess.twer.guessTwer.models.Person;
 import com.guess.twer.guessTwer.models.QuestionResult;
+import com.guess.twer.guessTwer.models.User;
 import com.guess.twer.guessTwer.repositories.GameRepository;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
-import java.util.ArrayList;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 @Service
@@ -17,6 +17,7 @@ import java.util.Random;
 public class GameService {
     private GameRepository gameRepository;
 
+    @Autowired
     public GameService(GameRepository gameRepository) {
         this.gameRepository = gameRepository;
     }
@@ -57,7 +58,7 @@ public class GameService {
         gameRepository.setOrUpdateScore(userName,score);
     }
 
-    public Integer getHighestScore(String username) {
-            return null;  //To change body of created methods use File | Settings | File Templates.
+    public List<User> getHighestScore(String username)throws Exception{
+        return gameRepository.getHighestScore(username);
     }
 }
