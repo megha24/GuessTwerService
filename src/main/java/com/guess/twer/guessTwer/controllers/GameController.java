@@ -37,22 +37,33 @@ public class GameController {
     }
 
     @RequestMapping(value = "/setHighestScore", method = RequestMethod.POST)
-    public ResponseEntity<Void> setHighestScore(@RequestParam("userName")String userName, @RequestParam("score")String score) {
-        try{
+    public ResponseEntity<Void> setHighestScore(@RequestParam("userName") String userName, @RequestParam("score") String score) {
+        try {
             gameService.setOrUpdateScore(userName, Integer.parseInt(score));
             return new ResponseEntity<Void>(HttpStatus.OK);
-        }catch(Exception exception){
+        } catch (Exception exception) {
             return new ResponseEntity<Void>(HttpStatus.BAD_REQUEST);
         }
     }
 
-    @RequestMapping(value = "/getHighestScore/{userName}", method = RequestMethod.GET)
-    public ResponseEntity<List<User>> getUserHighestScore(@PathVariable String userName){
-        try{
-            List<User> user = gameService.getHighestScore(userName);
+    @RequestMapping(value = "/getThreeHighestScores", method = RequestMethod.GET)
+    public ResponseEntity<List<User>> getThreeHighestScores() {
+        try {
+            List<User> user = gameService.getThreeHighestScores();
             return new ResponseEntity<List<User>>(user, HttpStatus.OK);
-        }catch(Exception exception){
+        } catch (Exception exception) {
             return new ResponseEntity<List<User>>(HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @RequestMapping(value = "/getHighestScore/{userName}", method = RequestMethod.GET)
+    public ResponseEntity<Integer> getUserHighestScore(@PathVariable String userName) {
+        try {
+            Integer score = gameService.getHighestScore(userName);
+            return new ResponseEntity<Integer>(score, HttpStatus.OK);
+        } catch (Exception exception) {
+            exception.printStackTrace();
+            return new ResponseEntity<Integer>(HttpStatus.BAD_REQUEST);
         }
     }
 }

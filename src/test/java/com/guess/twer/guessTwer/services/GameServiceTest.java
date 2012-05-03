@@ -2,6 +2,7 @@ package com.guess.twer.guessTwer.services;
 
 import com.guess.twer.guessTwer.models.Person;
 import com.guess.twer.guessTwer.models.QuestionResult;
+import com.guess.twer.guessTwer.models.User;
 import com.guess.twer.guessTwer.repositories.GameRepository;
 import org.junit.Before;
 import org.junit.Test;
@@ -28,7 +29,7 @@ public class GameServiceTest {
     @Mock
     private GameRepository gameRepository;
     private GameService gameService;
-    
+
 
     @Before
     public void setUp() {
@@ -77,20 +78,38 @@ public class GameServiceTest {
         assertTrue(randomNumber <= personCount - 3 && randomNumber >= questionNo + 1);
 
     }
-    
+
     @Test
     public void shouldSetScore() throws Exception {
         String username = "someUser";
-        int score =100;
+        int score = 100;
         gameService.setOrUpdateScore(username, score);
-        verify(gameRepository).setOrUpdateScore(username,score);
+        verify(gameRepository).setOrUpdateScore(username, score);
 
     }
 
     @Test
-    public void shouldGetHighestScore(){
-        String username= "someUser";
-
+    public void shouldReturnThreeHighestScores() throws Exception {
+        ArrayList<User> userList = new ArrayList<User>();
+        User user1 = new User("user1", 90);
+        User user2 = new User("user2", 80);
+        User user3 = new User("user3", 70);
+        userList.add(user1);
+        userList.add(user2);
+        userList.add(user3);
+        when(gameRepository.getThreeHighestScorers()).thenReturn(userList);
+        List<User> userHighestScoreList = gameService.getThreeHighestScores();
+        assertEquals(userList, userHighestScoreList);
     }
+
+    @Test
+    public void shouldGetHighestScore() throws Exception {
+        String username = "some user";
+        int score = 90;
+        when(gameRepository.getHighestScore(username)).thenReturn(score);
+        Integer highestScore = gameService.getHighestScore(username);
+        assertEquals(new Integer(score), highestScore);
+    }
+
 }
     

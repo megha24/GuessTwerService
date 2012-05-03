@@ -45,9 +45,14 @@ public class GameRepository {
         return (int) datastore.find(User.class).countAll();
     }
 
-    public List<User> getHighestScore(String username) {
-        return datastore.find(User.class).filter("userName", username).asList();
+    public List<User> getThreeHighestScorers() {
+        return datastore.find(User.class).order("-highestScore").limit(3).asList();
     }
+    public int getHighestScore(String username) {
+        User user = datastore.find(User.class).filter("userName", username).asList().get(0);
+        return user.getHighestScore();
+    }
+
 }
 
 

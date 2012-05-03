@@ -54,11 +54,15 @@ public class GameService {
     }
 
 
-    public void setOrUpdateScore(String userName, int score) throws Exception   {
-        gameRepository.setOrUpdateScore(userName,score);
+    public void setOrUpdateScore(String userName, int score) throws Exception {
+        gameRepository.setOrUpdateScore(userName, score);
     }
 
-    public List<User> getHighestScore(String username)throws Exception{
-        return gameRepository.getHighestScore(username);
+    public List<User> getThreeHighestScores() throws Exception {
+        return gameRepository.getThreeHighestScorers();
+    }
+
+    public Integer getHighestScore(String userName) {
+        return gameRepository.getHighestScore(userName);
     }
 }
