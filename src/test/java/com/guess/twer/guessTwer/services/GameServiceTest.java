@@ -55,10 +55,10 @@ public class GameServiceTest {
 
         verify(gameRepository).getPersonInfo(questionNo);
         assertEquals(person1, question.getPerson());
-        assertEquals(person1.getName(), question.getGuessOptions().get(0));
-        assertEquals("person2", question.getGuessOptions().get(1));
-        assertEquals("person3", question.getGuessOptions().get(2));
-        assertEquals("person4", question.getGuessOptions().get(3));
+        assertEquals(person1.getName(), question.getGuessOptions().get(0).getText());
+        assertEquals("person2", question.getGuessOptions().get(1).getText());
+        assertEquals("person3", question.getGuessOptions().get(2).getText());
+        assertEquals("person4", question.getGuessOptions().get(3).getText());
     }
 
     @Test
@@ -98,7 +98,7 @@ public class GameServiceTest {
         userList.add(user2);
         userList.add(user3);
         when(gameRepository.getThreeHighestScorers()).thenReturn(userList);
-        List<User> userHighestScoreList = gameService.getThreeHighestScores();
+        List<User> userHighestScoreList = gameService.getThreeHighestScorers();
         assertEquals(userList, userHighestScoreList);
     }
 

@@ -1,5 +1,6 @@
 package com.guess.twer.guessTwer.services;
 
+import com.guess.twer.guessTwer.models.GuessOption;
 import com.guess.twer.guessTwer.models.Person;
 import com.guess.twer.guessTwer.models.QuestionResult;
 import com.guess.twer.guessTwer.models.User;
@@ -28,14 +29,14 @@ public class GameService {
         int randomNumber = randomInteger(personCount, questionNo);
 
         List<Person> personNames = gameRepository.getThreePersonName(randomNumber);
-        List<String> options = new ArrayList<String>();
+        List<GuessOption> guessOptionList = new ArrayList<GuessOption>();
 
-        options.add(person.getName());
-        options.add(personNames.get(0).getName());
-        options.add(personNames.get(1).getName());
-        options.add(personNames.get(2).getName());
+        guessOptionList.add(new GuessOption(person.getName()));
+        guessOptionList.add(new GuessOption(personNames.get(0).getName()));
+        guessOptionList.add(new GuessOption(personNames.get(1).getName()));
+        guessOptionList.add(new GuessOption(personNames.get(2).getName()));
 
-        QuestionResult questionResult = new QuestionResult(person, options);
+        QuestionResult questionResult = new QuestionResult(person, guessOptionList);
 
         return questionResult;
     }
@@ -58,7 +59,7 @@ public class GameService {
         gameRepository.setOrUpdateScore(userName, score);
     }
 
-    public List<User> getThreeHighestScores() throws Exception {
+    public List<User> getThreeHighestScorers() throws Exception {
         return gameRepository.getThreeHighestScorers();
     }
 

@@ -13,6 +13,6 @@ public class QuestionResult {
     @Getter
     private Person person;
     @Getter
-    private List<String> guessOptions = new ArrayList<String>();
+    private List<GuessOption> guessOptions = new ArrayList<GuessOption>();
 
   }

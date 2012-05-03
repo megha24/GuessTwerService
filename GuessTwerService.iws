@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="847d47ad-2469-4c31-bfd2-8754161ad8fe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/GuessOption.java" />
       <change type="DELETED" beforePath="C:\GitRepository\GuessTwerService\src\main\java\com\guess\twer\guessTwer\controllers\PersonController.java" afterPath="" />
       <change type="DELETED" beforePath="C:\GitRepository\GuessTwerService\src\main\java\com\guess\twer\guessTwer\repositories\PersonRepository.java" afterPath="" />
       <change type="DELETED" beforePath="C:\GitRepository\GuessTwerService\src\main\java\com\guess\twer\guessTwer\services\PersonService.java" afterPath="" />
       <change type="DELETED" beforePath="C:\GitRepository\GuessTwerService\src\test\java\com\guess\twer\guessTwer\controllers\PersonControllerTest.java" afterPath="" />
       <change type="DELETED" beforePath="C:\GitRepository\GuessTwerService\src\test\java\com\guess\twer\guessTwer\repositories\PersonRepositoryTest.java" afterPath="" />
       <change type="DELETED" beforePath="C:\GitRepository\GuessTwerService\src\test\java\com\guess\twer\guessTwer\services\PersonServiceTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GuessTwerService.iml" afterPath="$PROJECT_DIR$/GuessTwerService.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GuessTwerService.ipr" afterPath="$PROJECT_DIR$/GuessTwerService.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GuessTwerService.iws" afterPath="$PROJECT_DIR$/GuessTwerService.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/controllers/GameController.java" afterPath="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/controllers/GameController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/repositories/GameRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/repositories/GameRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/QuestionResult.java" afterPath="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/QuestionResult.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/services/GameService.java" afterPath="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/services/GameService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/controllers/GameControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/controllers/GameControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/repositories/GameRepositoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/repositories/GameRepositoryTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/services/GameServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/services/GameServiceTest.java" />
     </list>
     <ignored path="GuessTwerService.iws" />
@@ -156,48 +153,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/controllers/GameController.java">
+      <file leaf-file-name="QuestionResult.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/QuestionResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="1" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.0">
+            <state line="15" column="66" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameControllerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/controllers/GameControllerTest.java">
+      <file leaf-file-name="GuessOption.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/GuessOption.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="32" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.0">
+            <state line="9" column="11" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#3958#3964#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Person.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="68" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mockito.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.0-rc1/mockito-all-1.9.0-rc1-sources.jar!/org/mockito/Mockito.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1226" column="0" selection-start="53214" selection-end="53214" vertical-scroll-proportion="0.0">
+            <state line="19" column="24" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -206,20 +185,42 @@
       <file leaf-file-name="GameService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/services/GameService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="62" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="25" column="26" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1155#1168#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameServiceTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GameServiceTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/services/GameServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="36" selection-start="812" selection-end="812" vertical-scroll-proportion="-1.5903084">
+            <state line="23" column="22" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#1466#1474#0" expanded="true" />
-                <element signature="e#3260#3266#0" expanded="true" />
+                <element signature="e#3300#3306#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameControllerTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/controllers/GameControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="91" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#3988#3994#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameController.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/controllers/GameController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="13" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.8258294">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -239,8 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/service/services/PersonService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/service/repositories/PersonRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/guess/twer/service/services/PersonServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/service/mongo/db/create/save_person_data.js" />
         <option value="$PROJECT_DIR$/src/main/resources/app.properties" />
@@ -261,7 +260,6 @@
         <option value="$PROJECT_DIR$/src/main/context/GuessTwerService.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/repositories/PersonRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/controllers/PersonControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/QuestionResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/services/PersonService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/services/PersonServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/User.java" />
@@ -269,12 +267,15 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/helpers/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/controllers/GameController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/controllers/GameControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/services/GameService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/services/GameServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/repositories/GameRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/repositories/GameRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/QuestionResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/services/GameService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/controllers/GameControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/GuessOption.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/services/GameServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/controllers/GameController.java" />
       </list>
     </option>
   </component>
@@ -436,98 +437,6 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="GuessTwerService">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="GuessTwerService">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="GuessTwerService">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="GuessTwerService">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="com/guess/twer/guessTwer">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="GuessTwerService">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="com/guess/twer/guessTwer">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="repositories">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -558,68 +467,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.GameServiceTest">
-    <configuration default="false" name="GameServiceTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.guess.twer.guessTwer.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GuessTwerService" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.guess.twer.guessTwer.services" />
-      <option name="MAIN_CLASS_NAME" value="com.guess.twer.guessTwer.services.GameServiceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="GameRepositoryTest.shouldReturnThreeHighestScorerUsers" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.guess.twer.guessTwer.repositories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GuessTwerService" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.guess.twer.guessTwer.repositories" />
-      <option name="MAIN_CLASS_NAME" value="com.guess.twer.guessTwer.repositories.GameRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldReturnThreeHighestScorerUsers" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="GameControllerTest.shouldReturnUserHighestScore" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -688,6 +535,62 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.guess.twer.guessTwer.repositories" />
       <option name="MAIN_CLASS_NAME" value="com.guess.twer.guessTwer.repositories.GameRepositoryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameServiceTest.shouldReturnQuestion" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.guess.twer.guessTwer.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GuessTwerService" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.guess.twer.guessTwer.services" />
+      <option name="MAIN_CLASS_NAME" value="com.guess.twer.guessTwer.services.GameServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnQuestion" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameServiceTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.guess.twer.guessTwer.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GuessTwerService" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.guess.twer.guessTwer.services" />
+      <option name="MAIN_CLASS_NAME" value="com.guess.twer.guessTwer.services.GameServiceTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -833,11 +736,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.GameServiceTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GameRepositoryTest.shouldReturnThreeHighestScorerUsers" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameControllerTest.shouldReturnUserHighestScore" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GameControllerTest.shouldThrowErrorwhileFetchingUserHighestScore" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GameRepositoryTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.GameControllerTest.shouldReturnUserHighestScore" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GameControllerTest.shouldThrowErrorwhileFetchingUserHighestScore" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.GameRepositoryTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GameServiceTest.shouldReturnQuestion" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GameServiceTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -860,6 +763,7 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39954075" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -872,11 +776,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32829374" sideWeight="0.5774971" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42250288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32829374" sideWeight="0.5774971" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42250288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.42020667" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -938,21 +841,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0/src.zip!/javax/lang/model/type/ErrorType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="49" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.1.0.RELEASE/spring-test-3.1.0.RELEASE.jar!/org/springframework/test/context/TestContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.1.0.RELEASE/spring-test-3.1.0.RELEASE.jar!/org/springframework/test/context/support/DependencyInjectionTestExecutionListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/3.1.0.RELEASE/spring-core-3.1.0.RELEASE.jar!/org/springframework/core/io/support/PropertiesLoaderSupport.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="16" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" />
@@ -1021,22 +909,12 @@
         <state line="34" column="0" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="215" selection-end="233" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/app-context.xml">
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/QuestionResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="45" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/User.java">
@@ -1096,15 +974,6 @@
         <state line="1226" column="0" selection-start="53214" selection-end="53214" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/controllers/GameControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="32" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3958#3964#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="68" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.0">
@@ -1112,23 +981,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/controllers/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="1" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/helpers/DatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="36" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/services/GameService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="62" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/repositories/GameRepository.java">
@@ -1145,13 +1000,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="24" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.1.0.RELEASE/spring-web-3.1.0.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="11" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty-util/6.1.22/jetty-util-6.1.22.jar!/org/mortbay/util/ajax/JSONObjectConvertor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.08531995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mortbay/jetty/jetty-util/6.1.22/jetty-util-6.1.22.jar!/org/mortbay/util/ajax/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="28" selection-start="6524" selection-end="6562" vertical-scroll-proportion="0.34378922">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/QuestionResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="66" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/services/GameService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="26" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1155#1168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/models/GuessOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/services/GameServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="812" selection-end="812" vertical-scroll-proportion="-1.5903084">
+        <state line="23" column="22" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#1466#1474#0" expanded="true" />
-            <element signature="e#3260#3266#0" expanded="true" />
+            <element signature="e#3300#3306#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/guess/twer/guessTwer/controllers/GameControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="91" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3988#3994#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/guess/twer/guessTwer/controllers/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="13" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.8258294">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -3,6 +3,9 @@ package com.guess.twer.guessTwer.controllers;
 import com.guess.twer.guessTwer.models.QuestionResult;
 import com.guess.twer.guessTwer.models.User;
 import com.guess.twer.guessTwer.services.GameService;
+import com.mongodb.util.JSON;
+import org.codehaus.jackson.map.util.JSONPObject;
+import org.mortbay.util.ajax.JSONObjectConvertor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,8 +30,10 @@ public class GameController {
     @RequestMapping(value = "/question/get/{questionNo}", method = RequestMethod.GET, headers = "Accept=application/json")
     public ResponseEntity<QuestionResult> getQuestion(@PathVariable String questionNo) {
         try {
+
             QuestionResult questionResult = gameService.getQuestion(Integer.parseInt(questionNo));
-            return new ResponseEntity<QuestionResult>(questionResult, HttpStatus.OK);
+            return new ResponseEntity<QuestionResult>(questionResult,HttpStatus.OK);
+//            return new ResponseEntity<String>(callback + "( "  + questionResult.toJSON +")", HttpStatus.OK);@RequestParam ("callback") String callback
         } catch (Exception exception) {
             exception.printStackTrace();
             return new ResponseEntity<QuestionResult>(HttpStatus.BAD_REQUEST);
@@ -38,6 +43,7 @@ public class GameController {
 
     @RequestMapping(value = "/setHighestScore", method = RequestMethod.POST)
     public ResponseEntity<Void> setHighestScore(@RequestParam("userName") String userName, @RequestParam("score") String score) {
+
         try {
             gameService.setOrUpdateScore(userName, Integer.parseInt(score));
             return new ResponseEntity<Void>(HttpStatus.OK);
@@ -46,10 +52,10 @@ public class GameController {
         }
     }
 
-    @RequestMapping(value = "/getThreeHighestScores", method = RequestMethod.GET)
-    public ResponseEntity<List<User>> getThreeHighestScores() {
+    @RequestMapping(value = "/getThreeHighestScorers", method = RequestMethod.GET)
+    public ResponseEntity<List<User>> getThreeHighestScorers() {
         try {
-            List<User> user = gameService.getThreeHighestScores();
+            List<User> user = gameService.getThreeHighestScorers();
             return new ResponseEntity<List<User>>(user, HttpStatus.OK);
         } catch (Exception exception) {
             return new ResponseEntity<List<User>>(HttpStatus.BAD_REQUEST);
