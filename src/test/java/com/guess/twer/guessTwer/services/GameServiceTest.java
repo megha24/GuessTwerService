@@ -54,11 +54,9 @@ public class GameServiceTest {
         QuestionResult question = gameServiceSpy.getQuestion(questionNo);
 
         verify(gameRepository).getPersonInfo(questionNo);
+
         assertEquals(person1, question.getPerson());
-        assertEquals(person1.getName(), question.getGuessOptions().get(0).getText());
-        assertEquals("person2", question.getGuessOptions().get(1).getText());
-        assertEquals("person3", question.getGuessOptions().get(2).getText());
-        assertEquals("person4", question.getGuessOptions().get(3).getText());
+        assertEquals(4, question.getGuessOptions().size());
     }
 
     @Test

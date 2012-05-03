@@ -29,12 +29,13 @@ public class GameController {
     }
 
     @RequestMapping(value = "/question/get/{questionNo}", method = RequestMethod.GET, headers = "Accept=application/json")
-    public ResponseEntity<String> getQuestion(@PathVariable String questionNo, @RequestParam("callback") String callback) {
+    public ResponseEntity<String> getQuestion(@PathVariable String questionNo, @RequestParam ("callback") String callback) {
         try {
 
             QuestionResult questionResult = gameService.getQuestion(Integer.parseInt(questionNo));
             ObjectMapper mapper = new ObjectMapper();
-            return new ResponseEntity<String>(callback + "(" + mapper.writeValueAsString(questionResult).toString() + ")", HttpStatus.OK);
+            return new ResponseEntity<String>(callback+"("+mapper.writeValueAsString(questionResult).toString()+")", HttpStatus.OK);
+
 
         } catch (Exception exception) {
             exception.printStackTrace();
@@ -43,35 +44,37 @@ public class GameController {
 
     }
 
-    @RequestMapping(value = "/setHighestScore", method = RequestMethod.POST)
-    public ResponseEntity<Void> setHighestScore(@RequestParam("userName") String userName, @RequestParam("score") String score) {
+    @RequestMapping(value = "/setHighestScore", method = RequestMethod.GET)
+    public ResponseEntity<String> setHighestScore(@RequestParam("userName") String userName, @RequestParam("score") String score, @RequestParam("callback") String callback) {
 
         try {
             gameService.setOrUpdateScore(userName, Integer.parseInt(score));
-            return new ResponseEntity<Void>(HttpStatus.OK);
+            return new ResponseEntity<String>(callback+"('')",HttpStatus.OK);
         } catch (Exception exception) {
-            return new ResponseEntity<Void>(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
         }
     }
 
     @RequestMapping(value = "/getThreeHighestScorers", method = RequestMethod.GET)
-    public ResponseEntity<List<User>> getThreeHighestScorers() {
+    public ResponseEntity<String> getThreeHighestScorers(@RequestParam ("callback") String callback) {
         try {
             List<User> user = gameService.getThreeHighestScorers();
-            return new ResponseEntity<List<User>>(user, HttpStatus.OK);
+            ObjectMapper mapper = new ObjectMapper();
+            return new ResponseEntity<String>(callback+"("+mapper.writeValueAsString(user).toString()+")", HttpStatus.OK);
         } catch (Exception exception) {
-            return new ResponseEntity<List<User>>(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
         }
     }
 
     @RequestMapping(value = "/getHighestScore/{userName}", method = RequestMethod.GET)
-    public ResponseEntity<Integer> getUserHighestScore(@PathVariable String userName) {
+    public ResponseEntity<String> getUserHighestScore(@PathVariable String userName, @RequestParam("callback") String callback) {
         try {
             Integer score = gameService.getHighestScore(userName);
-            return new ResponseEntity<Integer>(score, HttpStatus.OK);
+            ObjectMapper mapper = new ObjectMapper();
+            return new ResponseEntity<String>(callback+"("+mapper.writeValueAsString(score).toString()+")", HttpStatus.OK);
         } catch (Exception exception) {
             exception.printStackTrace();
-            return new ResponseEntity<Integer>(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
         }
     }
 }

@@ -36,7 +36,9 @@ public class GameService {
         guessOptionList.add(new GuessOption(personNames.get(1).getName()));
         guessOptionList.add(new GuessOption(personNames.get(2).getName()));
 
-        QuestionResult questionResult = new QuestionResult(person, guessOptionList);
+        QuestionResult questionResult = new QuestionResult();
+        questionResult.setPerson(person);
+        questionResult.setGuessOptions(guessOptionList);
 
         return questionResult;
     }

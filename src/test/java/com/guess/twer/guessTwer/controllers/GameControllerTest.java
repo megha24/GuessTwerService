@@ -53,7 +53,7 @@ public class GameControllerTest {
     public void shouldUpdateOrInsertUserHighestScore() throws Exception {
         String userName = "userName";
         String score = "80";
-        ResponseEntity<Void> userResponseEntity = gameController.setHighestScore(userName, score);
+        ResponseEntity<String> userResponseEntity = gameController.setHighestScore(userName, score,"callback");
         verify(gameService).setOrUpdateScore(userName, Integer.parseInt(score));
         assertEquals("should return OK status", HttpStatus.OK, userResponseEntity.getStatusCode());
     }
@@ -62,8 +62,8 @@ public class GameControllerTest {
     public void shouldReturnBadRequestOnExceptionWhileSettingScore() throws Exception {
         String userName = "userName";
         String score = "80";
-        when(gameController.setHighestScore(userName, score)).thenThrow(Exception.class);
-        ResponseEntity<Void> userResponseEntity = gameController.setHighestScore(userName, score);
+        when(gameController.setHighestScore(userName, score,"callback")).thenThrow(Exception.class);
+        ResponseEntity<String> userResponseEntity = gameController.setHighestScore(userName, score,"callback");
         verify(gameService).setOrUpdateScore(userName, Integer.parseInt(score));
         assertEquals("should return BAD REQUEST status", HttpStatus.BAD_REQUEST, userResponseEntity.getStatusCode());
     }
@@ -73,18 +73,18 @@ public class GameControllerTest {
         String username = "some username";
         String score = "90";
         when(gameService.getHighestScore(username)).thenReturn(Integer.valueOf(score));
-        ResponseEntity<Integer> userHighestScore = gameController.getUserHighestScore(username);
+        ResponseEntity<String> userHighestScore = gameController.getUserHighestScore(username,"callback");
         verify(gameService).getHighestScore(username);
         assertEquals("should return OK status", HttpStatus.OK, userHighestScore.getStatusCode());
-        assertEquals(score.toString(), userHighestScore.getBody().toString());
+        assertEquals("callback("+score.toString()+")", userHighestScore.getBody().toString());
 
     }
 
     @Test
     public void shouldThrowErrorwhileFetchingUserHighestScore() throws Exception {
         String username = "some username";
-        when(gameController.getUserHighestScore(username)).thenThrow(Exception.class);
-        ResponseEntity<Integer> userHighestScore = gameController.getUserHighestScore(username);
+        when(gameController.getUserHighestScore(username,"callback")).thenThrow(Exception.class);
+        ResponseEntity<String> userHighestScore = gameController.getUserHighestScore(username,"callback");
         verify(gameService).getHighestScore(username);
         assertEquals("should return BAD REQUEST status", HttpStatus.BAD_REQUEST, userHighestScore.getStatusCode());
     }
@@ -99,17 +99,16 @@ public class GameControllerTest {
         userList.add(user2);
         userList.add(user3);
         when(gameService.getThreeHighestScorers()).thenReturn(userList);
-        ResponseEntity<List<User>> userHighestScore = gameController.getThreeHighestScorers();
+        ResponseEntity<String> userHighestScore = gameController.getThreeHighestScorers("callback");
         verify(gameService).getThreeHighestScorers();
         assertEquals("should return OK status", HttpStatus.OK, userHighestScore.getStatusCode());
-        assertEquals(userList, userHighestScore.getBody());
 
     }
 
     @Test
     public void shouldThroawErrorwhileFetchingUserHighestScore() throws Exception {
-        when(gameController.getThreeHighestScorers()).thenThrow(Exception.class);
-        ResponseEntity<List<User>> highestScores = gameController.getThreeHighestScorers();
+        when(gameController.getThreeHighestScorers("callback")).thenThrow(Exception.class);
+        ResponseEntity<String> highestScores = gameController.getThreeHighestScorers("callback");
         verify(gameService).getThreeHighestScorers();
         assertEquals("should return BAD REQUEST status", HttpStatus.BAD_REQUEST, highestScores.getStatusCode());
     }
