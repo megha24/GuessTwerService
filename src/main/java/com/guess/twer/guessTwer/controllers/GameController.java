@@ -4,6 +4,7 @@ import com.guess.twer.guessTwer.models.QuestionResult;
 import com.guess.twer.guessTwer.models.User;
 import com.guess.twer.guessTwer.services.GameService;
 import com.mongodb.util.JSON;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.util.JSONPObject;
 import org.mortbay.util.ajax.JSONObjectConvertor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,15 +29,16 @@ public class GameController {
     }
 
     @RequestMapping(value = "/question/get/{questionNo}", method = RequestMethod.GET, headers = "Accept=application/json")
-    public ResponseEntity<QuestionResult> getQuestion(@PathVariable String questionNo) {
+    public ResponseEntity<String> getQuestion(@PathVariable String questionNo, @RequestParam("callback") String callback) {
         try {
 
             QuestionResult questionResult = gameService.getQuestion(Integer.parseInt(questionNo));
-            return new ResponseEntity<QuestionResult>(questionResult,HttpStatus.OK);
-//            return new ResponseEntity<String>(callback + "( "  + questionResult.toJSON +")", HttpStatus.OK);@RequestParam ("callback") String callback
+            ObjectMapper mapper = new ObjectMapper();
+            return new ResponseEntity<String>(callback + "(" + mapper.writeValueAsString(questionResult).toString() + ")", HttpStatus.OK);
+
         } catch (Exception exception) {
             exception.printStackTrace();
-            return new ResponseEntity<QuestionResult>(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
         }
 
     }

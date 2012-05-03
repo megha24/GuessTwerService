@@ -32,22 +32,22 @@ public class GameControllerTest {
         gameController = new GameController(gameService);
     }
 
-//    @Test
-//    public void shouldReturnQuestionBasedOnQuestionNo() throws Exception {
-//        String questionNo = "1";
-//        ResponseEntity<QuestionResult> question = gameController.getQuestion(questionNo);
-//        verify(gameService).getQuestion(Integer.parseInt(questionNo));
-//        assertEquals("should return OK status", HttpStatus.OK, question.getStatusCode());
-//    }
+    @Test
+    public void shouldReturnQuestionBasedOnQuestionNo() throws Exception {
+        String questionNo = "1";
+        ResponseEntity<String> question = gameController.getQuestion(questionNo,"callback");
+        verify(gameService).getQuestion(Integer.parseInt(questionNo));
+        assertEquals("should return OK status", HttpStatus.OK, question.getStatusCode());
+    }
 
-//    @Test
-//    public void shouldReturnBadRequestOnExceptionWhileRetreivingQuestion() throws Exception {
-//        String questionNo = "1";
-//        when(gameController.getQuestion(questionNo)).thenThrow(Exception.class);
-//        ResponseEntity<QuestionResult> question = gameController.getQuestion(questionNo);
-//        verify(gameService).getQuestion(Integer.parseInt(questionNo));
-//        assertEquals("should return BAD REQUEST status", HttpStatus.BAD_REQUEST, question.getStatusCode());
-//    }
+    @Test
+    public void shouldReturnBadRequestOnExceptionWhileRetreivingQuestion() throws Exception {
+        String questionNo = "1";
+        when(gameController.getQuestion(questionNo,"callback")).thenThrow(Exception.class);
+        ResponseEntity<String> question = gameController.getQuestion(questionNo,"callback");
+        verify(gameService).getQuestion(Integer.parseInt(questionNo));
+        assertEquals("should return BAD REQUEST status", HttpStatus.BAD_REQUEST, question.getStatusCode());
+    }
 
     @Test
     public void shouldUpdateOrInsertUserHighestScore() throws Exception {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.024" errors="0" skipped="0" tests="6" name="com.guess.twer.guessTwer.services.GameServiceTest">
+<testsuite failures="0" time="0.016" errors="0" skipped="0" tests="6" name="com.guess.twer.guessTwer.services.GameServiceTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0\jre\bin"/>
@@ -19,7 +19,7 @@
     <property name="basedir" value="C:\GitRepository\GuessTwerService"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="C:\GitRepository\GuessTwerService\target\surefire\surefirebooter52577.jar"/>
+    <property name="surefire.real.class.path" value="C:\GitRepository\GuessTwerService\target\surefire\surefirebooter13985.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\MEGHAA~1.COR\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -59,9 +59,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="0.006" classname="com.guess.twer.guessTwer.services.GameServiceTest" name="shouldReturnThreeHighestScores"/>
+  <testcase time="0" classname="com.guess.twer.guessTwer.services.GameServiceTest" name="shouldReturnThreeHighestScores"/>
   <testcase time="0" classname="com.guess.twer.guessTwer.services.GameServiceTest" name="shouldGetHighestScore"/>
-  <testcase time="0.015" classname="com.guess.twer.guessTwer.services.GameServiceTest" name="shouldReturnQuestion"/>
+  <testcase time="0.016" classname="com.guess.twer.guessTwer.services.GameServiceTest" name="shouldReturnQuestion"/>
   <testcase time="0" classname="com.guess.twer.guessTwer.services.GameServiceTest" name="shouldReturnRandomNumberAs47"/>
   <testcase time="0" classname="com.guess.twer.guessTwer.services.GameServiceTest" name="shouldReturnRandomNumberBetween6And47"/>
   <testcase time="0" classname="com.guess.twer.guessTwer.services.GameServiceTest" name="shouldSetScore"/>
